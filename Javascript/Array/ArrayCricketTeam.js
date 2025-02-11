@@ -16,8 +16,7 @@ const indianCricketTeam = [
 ];
 
 /* Array.at() :- The at() method of Array instances takes an integer value and returns the item at that index,
-   allowing for positive and negative integers. Negative integers count back from the last item in the array.
- */
+   allowing for positive and negative integers. Negative integers count back from the last item in the array.*/
 
 console.log(`All-rounder Player in 5th Position :-`, indianCricketTeam.at(5)); //which All-rounder player in 5th position 
 
@@ -33,7 +32,7 @@ It does not modify the original array. i.e  shallow copy */
 const filterlist = indianCricketTeam.filter((newteam) => newteam.role === "Bowler"); //filter the players who are Bowler from the list of Indian cricket team players
 console.log(filterlist);
 
-/*Array.Find() :- The find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. 
+/* Array.Find() :- The find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. 
 If no values satisfy the testing function, undefined is returned. */
 
 const findplayer = indianCricketTeam.find((player) => player.role === "Batsman"); //Find the 1st Batsman in team
@@ -87,5 +86,4 @@ console.log(iter.next().value);
 /* Array.toReversed() :- The toReversed() method of Array instances is the copying counterpart of the reverse() method. 
 It returns a new array with the elements in reversed order. */
 
-
-console.log(indianCricketTeam.toReversed()); // Rank of Player is reverse
+console.log(indianCricketTeam.toReversed()); // Rank of Player is reverse 
